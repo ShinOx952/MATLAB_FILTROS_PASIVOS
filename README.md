@@ -1,32 +1,32 @@
-# Análisis de Sistemas: Diseño y Simulación de Filtros Pasivos (MATLAB)
+# Modelado y Validación Experimental de Filtros de Control (MATLAB & Hardware)
 
-**Estado del Proyecto:** Simulación completa. El informe técnico y el código de MATLAB están disponibles en este repositorio.
+**Estado del Proyecto:** Simulación teórica (MATLAB) y validación experimental (Hardware/Osciloscopio) completadas.
 
 ---
 
 ## 1. Resumen del Proyecto
 
-Este proyecto demuestra la aplicación de **Modelado y Programación** para el diseño y análisis de **Filtros Pasa-Bajas de Primer Orden (RC y LR)**.
+Este proyecto integral demuestra mi capacidad para modelar sistemas de control y validar su comportamiento en hardware. Se diseñó, simuló y midió un **Filtro Pasa-Bajas RC de Primer Orden** para comprender y mitigar el ruido de alta frecuencia, una habilidad crítica en sistemas de potencia y control.
 
-El objetivo fue calcular, modelar y simular la respuesta en frecuencia de estos filtros. La habilidad demostrada es la capacidad de usar herramientas de programación para la **ingeniería de control y la mitigación de ruido**, lo cual es crítico en Electrónica de Potencia y Sistemas Embebidos.
+La fase inicial consistió en el cálculo teórico y el modelado en MATLAB. La segunda fase se centró en la **implementación del circuito físico** y la medición de la respuesta de frecuencia utilizando un osciloscopio, comparando las señales obtenidas con las curvas predichas por la simulación.
 
-### ➡️ Informe Técnico Completo
-El informe contiene la deducción de las funciones de transferencia y los resultados gráficos:
+### ➡️ Informes Técnicos Completos
 
-**[Ver Informe Técnico (PDF)](./250512_341838_JA_T06.pdf)**
+* **Parte 1: Análisis Teórico y Simulación (MATLAB)**
+    * **[Ver Reporte Tarea 6 (Simulación)](./250512_341838_JA_T06.pdf)**
+* **Parte 2: Implementación y Validación Experimental (Hardware)**
+    * **[Ver Reporte Práctica 4 (Hardware)](./250518_A341838_JARH_P4.pdf)**
 
 ---
 
-## 2. Herramientas y Metodología
+## 2. Herramientas y Competencias Demostradas
 
-* **Software Principal:** MATLAB® R2021a
-* **Metodología:**
-    * **Análisis Teórico:** Derivación de la frecuencia de corte ($f_c$) y la función de transferencia $H(s)$.
-    * **Programación:** Uso de MATLAB para el cálculo de componentes y la generación de gráficos.
-    * **Análisis de Frecuencia:** Se generaron gráficas para validar la atenuación del sistema a diferentes frecuencias.
+* **Modelado y Programación:** Uso avanzado de **MATLAB** para calcular funciones de transferencia ($H(s)$), simular la respuesta en fase y ganancia, y generar gráficos de control.
+* [cite_start]**Validación de Hardware:** Montaje del circuito RC y uso experto del **Osciloscopio** para medir las señales de entrada y salida, demostrando la atenuación de la señal de prueba (PWM) conforme aumenta la frecuencia[cite: 906].
+* [cite_start]**Análisis de Sistemas:** Comprensión de cómo la ganancia cae a -3 dB y la fase a $-45^\circ$ en la frecuencia de corte ($f_c$)[cite: 867, 869].
 
-## 3. Competencias Demostradas
+**(Imagen de la Simulación en MATLAB)**
+![Gráfico de Ganancia y Fase del Filtro RC en MATLAB](Docs/MATLAB_Filtro_RC.png)
 
-* **Modelado en MATLAB:** Dominio del entorno de MATLAB para el cálculo, simulación y generación de gráficos.
-* **Análisis de Sistemas:** Comprensión de la respuesta del circuito a distintas frecuencias (Ganancia y Fase).
-* **Solución de Ruido:** Habilidad esencial para el diseño de fuentes conmutadas (donde estos filtros se usan para reducir el rizado).
+**(Imagen de la Medición en Osciloscopio)**
+![Señal de salida medida en el Osciloscopio vs. Señal de entrada](Docs/Osciloscopio_Filtro_RC.png)
